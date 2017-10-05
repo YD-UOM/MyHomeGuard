@@ -21,6 +21,7 @@
 		CD6F2EB31F7E048500DDF3D4 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F2EB21F7E048500DDF3D4 /* ClientManager.swift */; };
 		CD70266A1F7E24A4006F67BD /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7026691F7E24A4006F67BD /* ExternalAccessory.framework */; };
 		CD70266C1F7E24AD006F67BD /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD70266B1F7E24AD006F67BD /* GameKit.framework */; };
+		CDDF614B1F86341A0077FAD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDF614A1F86341A0077FAD6 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CD6F2EB41F7E116700DDF3D4 /* MyHomeGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHomeGuard.entitlements; sourceTree = "<group>"; };
 		CD7026691F7E24A4006F67BD /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		CD70266B1F7E24AD006F67BD /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		CDDF614A1F86341A0077FAD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
 				A2D9CBCA1943C2540017F096 /* Main.storyboard */,
+				CDDF614A1F86341A0077FAD6 /* ViewController.swift */,
 				A2D9CBCD1943C2540017F096 /* Images.xcassets */,
 				A2D9CBC11943C2540017F096 /* Supporting Files */,
 				A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDF614B1F86341A0077FAD6 /* ViewController.swift in Sources */,
 				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,
