@@ -134,7 +134,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="image" destination="uK1-rv-J3N" id="idB-TK-2u8"/>
+                        <outlet property="imageView" destination="uK1-rv-J3N" id="K5n-AB-5sE"/>
                         <outlet property="messageLabel" destination="2LK-4L-AjV" id="dTW-mV-KRb"/>
                     </connections>
                 </viewController>
