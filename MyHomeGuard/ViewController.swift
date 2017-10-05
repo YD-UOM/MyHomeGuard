@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    
+    var myString=String()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        messageLabel.text=myString
         // Do any additional setup after loading the view.
     }
 

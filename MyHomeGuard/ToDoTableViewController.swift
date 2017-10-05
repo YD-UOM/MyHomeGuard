@@ -155,6 +155,9 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         self.performSegue(withIdentifier: "detailview", sender: self)
+    }
     func configureCell(_ cell: UITableViewCell, indexPath: IndexPath) -> UITableViewCell {
         let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
         
@@ -184,6 +187,11 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
         if segue.identifier == "addItem" {
             let todoController = segue.destination as! ToDoItemViewController
             todoController.delegate = self
+        }
+        
+        if segue.identifier == "detailview" {
+            var viewController = segue.destination as! ViewController
+            viewController.myString="text"
         }
     }
     
