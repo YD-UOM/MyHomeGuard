@@ -19,5 +19,98 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHomeGuard/ToDoItemViewController.swift"
+            timestampString = "528881470.014621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHomeGuard.ToDoItemViewController.__deallocating_deinit"
+                  moduleName = "MyHomeGuard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yiding/Documents/mobileWorkshop/MyHomeGuard/MyHomeGuard/ToDoItemViewController.swift"
+                  timestampString = "528881470.022985"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHomeGuard.ToDoItemViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MyHomeGuard.ToDoItemViewController"
+                  moduleName = "MyHomeGuard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yiding/Documents/mobileWorkshop/MyHomeGuard/MyHomeGuard/ToDoItemViewController.swift"
+                  timestampString = "528881470.026139"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHomeGuard.ToDoItemViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MyHomeGuard.ToDoItemViewController"
+                  moduleName = "MyHomeGuard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yiding/Documents/mobileWorkshop/MyHomeGuard/MyHomeGuard/ToDoItemViewController.swift"
+                  timestampString = "528881470.028371"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHomeGuard.ToDoItemViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyHomeGuard.ToDoItemViewController&gt;"
+                  moduleName = "MyHomeGuard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yiding/Documents/mobileWorkshop/MyHomeGuard/MyHomeGuard/ToDoItemViewController.swift"
+                  timestampString = "528881470.030524"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyHomeGuard.ToDoItemViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyHomeGuard.ToDoItemViewController&gt;"
+                  moduleName = "MyHomeGuard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yiding/Documents/mobileWorkshop/MyHomeGuard/MyHomeGuard/ToDoItemViewController.swift"
+                  timestampString = "528881470.032704"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
