@@ -16,11 +16,11 @@
 		A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D9CBCD1943C2540017F096 /* Images.xcassets */; };
 		A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */; };
 		A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E767C5194594DC00869113 /* ToDoItemViewController.swift */; };
+		A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */; };
 		A3BBD77D1C05181600DD0DB0 /* MicrosoftAzureMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BBD77C1C05181600DD0DB0 /* MicrosoftAzureMobile.framework */; };
 		CD6F2EB31F7E048500DDF3D4 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F2EB21F7E048500DDF3D4 /* ClientManager.swift */; };
 		CD70266A1F7E24A4006F67BD /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7026691F7E24A4006F67BD /* ExternalAccessory.framework */; };
 		CD70266C1F7E24AD006F67BD /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD70266B1F7E24AD006F67BD /* GameKit.framework */; };
-		CDA555EE1F85F10400897F29 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,6 @@
 		A2E767C5194594DC00869113 /* ToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemViewController.swift; sourceTree = "<group>"; };
 		A31A89F61BF3FDFA00C7B656 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A3BBD77C1C05181600DD0DB0 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftAzureMobile.framework; sourceTree = "<group>"; };
-		CD2E1D971F85EF1C00BF6BB9 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
-		CD2E1D981F85EF4B00BF6BB9 /* Screen Shot 2017-10-03 at 11.35.11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-10-03 at 11.35.11.png"; sourceTree = "<group>"; };
 		CD6F2EB21F7E048500DDF3D4 /* ClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
 		CD6F2EB41F7E116700DDF3D4 /* MyHomeGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHomeGuard.entitlements; sourceTree = "<group>"; };
 		CD7026691F7E24A4006F67BD /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -95,7 +93,6 @@
 		A2D9CBC01943C2540017F096 /* MyHomeGuard */ = {
 			isa = PBXGroup;
 			children = (
-				CD2E1D951F85E83A00BF6BB9 /* Images */,
 				CD6F2EB41F7E116700DDF3D4 /* MyHomeGuard.entitlements */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
@@ -127,15 +124,6 @@
 			);
 			name = frameworks;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		CD2E1D951F85E83A00BF6BB9 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				CD2E1D971F85EF1C00BF6BB9 /* home.jpg */,
-				CD2E1D981F85EF4B00BF6BB9 /* Screen Shot 2017-10-03 at 11.35.11.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA555EE1F85F10400897F29 /* Launch Screen.storyboard in Resources */,
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
+				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
