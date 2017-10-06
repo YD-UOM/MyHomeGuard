@@ -21,7 +21,8 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
     
     var table : MSSyncTable?
     var store : MSCoreDataStore?
-    
+    var activetext = String()
+    var activeurl = String()
     lazy var fetchedResultController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "TodoItem")
         let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext!
@@ -156,7 +157,21 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         self.performSegue(withIdentifier: "detailview", sender: self)
+        let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
+        if let text = item.value(forKey: "text") as? String {
+            print("this is the text: "+text)
+            self.activetext=text
+        } else {
+            self.activetext="?"
+        }
+        if let url = item.value(forKey: "imageurl") as? String {
+             print("this is the url: "+url)
+            self.activeurl=url
+            
+        } else {
+            self.activeurl="?"
+        }
+        self.performSegue(withIdentifier: "detailview", sender: self)
     }
     func configureCell(_ cell: UITableViewCell, indexPath: IndexPath) -> UITableViewCell {
         let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
@@ -191,7 +206,10 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
         
         if segue.identifier == "detailview" {
             var viewController = segue.destination as! ViewController
-            viewController.myString="text"
+            print("this is the text passed: "+activetext)
+            print("this is the url passed: "+activeurl)
+            viewController.myString=activetext
+            viewController.imgurl=activeurl
         }
     }
     

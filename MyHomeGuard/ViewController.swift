@@ -14,15 +14,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var myString=String()
+    var imgurl=String()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.messageLabel.text=myString
+        
         // Do any additional setup after loading the view.
-        let url = URL(string:
-            "https://www.w3schools.com/w3images/fjords.jpg")
+        let url = URL(string:imgurl)
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
-            guard let data = data, error == nil else { return }
+            guard let data = data, error == nil else {
+                print("fuck")
+                return
+                
+            }
             
             DispatchQueue.main.sync() {
                 self.imageView.image = UIImage(data: data)
