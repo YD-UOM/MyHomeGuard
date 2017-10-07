@@ -10,6 +10,9 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageThumb: UIImageView!
+    
+    @IBOutlet weak var textThumb: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

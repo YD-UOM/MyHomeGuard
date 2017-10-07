@@ -17,8 +17,9 @@ import Foundation
 import UIKit
 import CoreData
 
-class ToDoTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ToDoItemDelegate {
+class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerDelegate, ToDoItemDelegate {
     
+
     var table : MSSyncTable?
     var store : MSCoreDataStore?
     var activetext = String()
@@ -125,7 +126,7 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
     {
         let record = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
         var item = self.store!.tableItem(from: record)
-        item["complete"] = true
+        item["Achieve"] = true
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -148,10 +149,10 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let CellIdentifier = "Cell"
+        let CellIdentifier = "Cellcustom"
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) 
-        cell = configureCell(cell, indexPath: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! TableViewCell
+        cell = configureCell(cell, indexPath: indexPath) as! TableViewCell
         
         return cell
     }
@@ -173,19 +174,41 @@ class ToDoTableViewController: UITableViewController, NSFetchedResultsController
         }
         self.performSegue(withIdentifier: "detailview", sender: self)
     }
-    func configureCell(_ cell: UITableViewCell, indexPath: IndexPath) -> UITableViewCell {
+    func configureCell(_ cell: TableViewCell, indexPath: IndexPath) -> UITableViewCell {
         let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
         
         // Set the label on the cell and make sure the label color is black (in case this cell
         // has been reused and was previously greyed out
-        if let text = item.value(forKey: "text") as? String {
-            cell.textLabel!.text = text
+        if let text = item.value(forKey: "createdAt") as? Date {
+            let formatter = DateFormatter()
+            // initially set the format based on your datepicker date
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            cell.textThumb!.text = formatter.string(from:text)
         } else {
-            cell.textLabel!.text = "?"
+            cell.textThumb!.text = "?"
         }
         
-        cell.textLabel!.textColor = UIColor.black
+        cell.textThumb!.textColor = UIColor.black
+        var imgurl=String()
+        if let url = item.value(forKey: "imageurl") as? String {
+           imgurl=url
+            
+        } else {
+            imgurl="?"
+        }
+        let url = URL(string:imgurl)
         
+        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+            guard let data = data, error == nil else {
+                return
+                
+            }
+            DispatchQueue.main.sync() {
+                cell.imageThumb.image = UIImage(data: data)
+                
+            }
+        }
+        task.resume()
         return cell
     }
     
