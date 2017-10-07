@@ -119,7 +119,7 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
     
     override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?
     {
-        return "Complete"
+        return "Archive"
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
@@ -159,11 +159,13 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
-        if let text = item.value(forKey: "text") as? String {
-            print("this is the text: "+text)
-            self.activetext=text
+        if let text = item.value(forKey: "createdAt") as? Date {
+            let formatter = DateFormatter()
+            // initially set the format based on your datepicker date
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            self.activetext="Date Captured: "+formatter.string(from:text)
         } else {
-            self.activetext="?"
+            self.activetext = "?"
         }
         if let url = item.value(forKey: "imageurl") as? String {
              print("this is the url: "+url)

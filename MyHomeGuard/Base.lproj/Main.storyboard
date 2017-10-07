@@ -34,7 +34,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb9-EC-BiK">
-                                            <rect key="frame" x="189.5" y="28.5" width="137.5" height="29"/>
+                                            <rect key="frame" x="189" y="28.5" width="137.5" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -153,9 +153,8 @@
                                     <constraint firstAttribute="height" constant="168" id="xHz-Jd-hkl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LK-4L-AjV">
-                                <rect key="frame" x="97" y="442" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LK-4L-AjV">
+                                <rect key="frame" x="166.5" y="453.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,7 +165,9 @@
                             <constraint firstItem="uK1-rv-J3N" firstAttribute="centerX" secondItem="4S5-D8-qoB" secondAttribute="centerX" id="48h-f9-NSe"/>
                             <constraint firstItem="uK1-rv-J3N" firstAttribute="centerY" secondItem="4S5-D8-qoB" secondAttribute="centerY" id="5Cg-MX-d1o"/>
                             <constraint firstItem="eT6-hd-dVg" firstAttribute="top" secondItem="dIF-z3-wxB" secondAttribute="bottom" id="MBX-AS-nqr"/>
+                            <constraint firstItem="2LK-4L-AjV" firstAttribute="centerY" secondItem="4S5-D8-qoB" secondAttribute="centerY" constant="130" id="NNx-HS-vVi"/>
                             <constraint firstAttribute="trailing" secondItem="dIF-z3-wxB" secondAttribute="trailing" id="VgR-Ni-9ei"/>
+                            <constraint firstItem="2LK-4L-AjV" firstAttribute="centerX" secondItem="4S5-D8-qoB" secondAttribute="centerX" id="asQ-sB-KFQ"/>
                             <constraint firstItem="dIF-z3-wxB" firstAttribute="leading" secondItem="4S5-D8-qoB" secondAttribute="leading" id="hao-VR-u1q"/>
                             <constraint firstItem="dIF-z3-wxB" firstAttribute="top" secondItem="EQm-fi-eJa" secondAttribute="bottom" id="vQK-V6-846"/>
                         </constraints>
