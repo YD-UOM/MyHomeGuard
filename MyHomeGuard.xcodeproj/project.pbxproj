@@ -23,6 +23,8 @@
 		CD70266C1F7E24AD006F67BD /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD70266B1F7E24AD006F67BD /* GameKit.framework */; };
 		CDDF614B1F86341A0077FAD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDF614A1F86341A0077FAD6 /* ViewController.swift */; };
 		CDFEA3801F889A7F00DAE675 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDFEA37F1F889A7F00DAE675 /* home.jpg */; };
+		CDFEA3841F889FAC00DAE675 /* Guard.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFEA3831F889FAC00DAE675 /* Guard.png */; };
+		CDFEA3861F88A8CF00DAE675 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFEA3851F88A8CF00DAE675 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		CD70266B1F7E24AD006F67BD /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		CDDF614A1F86341A0077FAD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDFEA37F1F889A7F00DAE675 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
+		CDFEA3831F889FAC00DAE675 /* Guard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guard.png; sourceTree = "<group>"; };
+		CDFEA3851F88A8CF00DAE675 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				A2D9CBCD1943C2540017F096 /* Images.xcassets */,
 				A2D9CBC11943C2540017F096 /* Supporting Files */,
 				A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */,
+				CDFEA3851F88A8CF00DAE675 /* TableViewCell.swift */,
 				A2E767C5194594DC00869113 /* ToDoItemViewController.swift */,
 				A2D9CBE51943CB520017F096 /* frameworks */,
 				A2D9CBE81943D1340017F096 /* MyHomeGuard-Bridging-Header.h */,
@@ -135,6 +140,7 @@
 		CDFEA37B1F888FCA00DAE675 /* MyImages */ = {
 			isa = PBXGroup;
 			children = (
+				CDFEA3831F889FAC00DAE675 /* Guard.png */,
 				CDFEA37F1F889A7F00DAE675 /* home.jpg */,
 			);
 			name = MyImages;
@@ -217,6 +223,7 @@
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
+				CDFEA3841F889FAC00DAE675 /* Guard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +239,7 @@
 				A2BD20971AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld in Sources */,
 				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,
 				A2D9CBC41943C2540017F096 /* AppDelegate.swift in Sources */,
+				CDFEA3861F88A8CF00DAE675 /* TableViewCell.swift in Sources */,
 				CD6F2EB31F7E048500DDF3D4 /* ClientManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

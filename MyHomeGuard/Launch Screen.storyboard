@@ -36,16 +36,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guard.png" translatesAutoresizingMaskIntoConstraints="NO" id="udG-nz-YX6">
+                                <rect key="frame" x="132.5" y="278.5" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="dGM-id-Edw"/>
+                                    <constraint firstAttribute="height" constant="110" id="nsY-z6-d9Q"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.27058823529999998" green="0.69411764710000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="a6X-MS-XjV" secondAttribute="bottom" id="0UB-Af-mmy"/>
+                            <constraint firstItem="udG-nz-YX6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2hd-Jp-gSR"/>
                             <constraint firstItem="a6X-MS-XjV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7av-aI-z1o"/>
                             <constraint firstItem="iNr-oE-dy7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="80" id="7dm-MG-wWG"/>
                             <constraint firstItem="a6X-MS-XjV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Ejp-HP-kn5"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="FiX-Vf-ER7"/>
                             <constraint firstAttribute="trailing" secondItem="a6X-MS-XjV" secondAttribute="trailing" id="Rnx-Ly-OVY"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ohl-ww-S1T"/>
+                            <constraint firstItem="udG-nz-YX6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tWe-0J-2AS"/>
                             <constraint firstItem="iNr-oE-dy7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="x02-EV-D37"/>
                         </constraints>
                     </view>
@@ -56,6 +65,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Guard.png" width="845" height="845"/>
         <image name="home.jpg" width="736" height="1377"/>
     </resources>
 </document>
