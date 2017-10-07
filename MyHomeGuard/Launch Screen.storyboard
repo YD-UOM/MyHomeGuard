@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,22 +24,29 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a6X-MS-XjV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Home Guard" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="20" y="180" width="560" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Home Guard" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="62" y="212" width="251.5" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNr-oE-dy7">
+                                <rect key="frame" x="135" y="400.5" width="105" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.27058823529999998" green="0.69411764710000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="a6X-MS-XjV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="36B-99-GkW"/>
-                            <constraint firstAttribute="trailing" secondItem="a6X-MS-XjV" secondAttribute="trailing" id="KEg-yR-mut"/>
-                            <constraint firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstItem="a6X-MS-XjV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Y4b-Qb-XVF"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="a6X-MS-XjV" secondAttribute="bottom" id="m2Q-Zu-Dvq"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="a6X-MS-XjV" secondAttribute="bottom" id="0UB-Af-mmy"/>
+                            <constraint firstItem="a6X-MS-XjV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7av-aI-z1o"/>
+                            <constraint firstItem="iNr-oE-dy7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="80" id="7dm-MG-wWG"/>
+                            <constraint firstItem="a6X-MS-XjV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Ejp-HP-kn5"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="FiX-Vf-ER7"/>
+                            <constraint firstAttribute="trailing" secondItem="a6X-MS-XjV" secondAttribute="trailing" id="Rnx-Ly-OVY"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ohl-ww-S1T"/>
+                            <constraint firstItem="iNr-oE-dy7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="x02-EV-D37"/>
                         </constraints>
                     </view>
                 </viewController>
