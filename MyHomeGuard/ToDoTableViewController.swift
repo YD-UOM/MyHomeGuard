@@ -126,7 +126,7 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
     {
         let record = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
         var item = self.store!.tableItem(from: record)
-        item["Achieve"] = true
+        item["complete"] = true
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
