@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
@@ -18,8 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.messageLabel.text=myString
-        
+       // self.backgroundImage.image=UIImage(named:"home.jpg")
         // Do any additional setup after loading the view.
+        
         let url = URL(string:imgurl)
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
@@ -31,6 +33,7 @@ class ViewController: UIViewController {
             
             DispatchQueue.main.sync() {
                 self.imageView.image = UIImage(data: data)
+               
             }
         }
         
@@ -42,25 +45,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        let imageUrlString = "http://swiftdeveloperblog.com/wp-content/uploads/2015/07/1.jpeg"
-//        let imageUrl:URL = URL(string: imageUrlString)!
-//
-//        // Start background thread so that image loading does not make app unresponsive
-//        DispatchQueue.global(qos: .userInitiated).async {
-//
-//            let imageData:NSData = NSData(contentsOf: imageUrl)!
-//
-//            // When from background thread, UI needs to be updated on main_queue
-//            DispatchQueue.main.async {
-//                let image = UIImage(data: imageData as Data)
-//                self.imageView.image = image
-//
-//            }
-//        }
-//    }
     /*
     // MARK: - Navigation
 

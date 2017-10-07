@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Azure Mobile Apps-->
+        <!--My Home Guard-->
         <scene sceneID="v2j-ei-0Wt">
             <objects>
                 <tableViewController id="V6T-ri-3qt" customClass="ToDoTableViewController" customModule="MyHomeGuard" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="V6T-ri-3qt" id="JPV-12-XTr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Azure Mobile Apps" id="Hul-ZG-Q2n">
+                    <navigationItem key="navigationItem" title="My Home Guard" id="Hul-ZG-Q2n">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8eL-ww-Tlx">
                             <connections>
                                 <action selector="addItem:" destination="V6T-ri-3qt" id="Qf4-1u-FEE"/>
@@ -119,12 +119,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uK1-rv-J3N">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dIF-z3-wxB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uK1-rv-J3N">
+                                <rect key="frame" x="37.5" y="249.5" width="300" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Vpm-hg-0VR"/>
+                                    <constraint firstAttribute="height" constant="168" id="xHz-Jd-hkl"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LK-4L-AjV">
-                                <rect key="frame" x="166" y="290" width="42" height="21"/>
+                                <rect key="frame" x="97" y="442" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -132,15 +138,24 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uK1-rv-J3N" firstAttribute="centerX" secondItem="4S5-D8-qoB" secondAttribute="centerX" id="48h-f9-NSe"/>
+                            <constraint firstItem="uK1-rv-J3N" firstAttribute="centerY" secondItem="4S5-D8-qoB" secondAttribute="centerY" id="5Cg-MX-d1o"/>
+                            <constraint firstItem="eT6-hd-dVg" firstAttribute="top" secondItem="dIF-z3-wxB" secondAttribute="bottom" id="MBX-AS-nqr"/>
+                            <constraint firstAttribute="trailing" secondItem="dIF-z3-wxB" secondAttribute="trailing" id="VgR-Ni-9ei"/>
+                            <constraint firstItem="dIF-z3-wxB" firstAttribute="leading" secondItem="4S5-D8-qoB" secondAttribute="leading" id="hao-VR-u1q"/>
+                            <constraint firstItem="dIF-z3-wxB" firstAttribute="top" secondItem="EQm-fi-eJa" secondAttribute="bottom" id="vQK-V6-846"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="dIF-z3-wxB" id="jUC-Pr-afo"/>
                         <outlet property="imageView" destination="uK1-rv-J3N" id="K5n-AB-5sE"/>
                         <outlet property="messageLabel" destination="2LK-4L-AjV" id="dTW-mV-KRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QB-uT-Nkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2852" y="934"/>
+            <point key="canvasLocation" x="2852" y="933.28335832083962"/>
         </scene>
         <!--Azure Mobile Apps-->
         <scene sceneID="yNt-7v-plj">
@@ -167,4 +182,7 @@
             <point key="canvasLocation" x="1359.375" y="168.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home.jpg" width="736" height="1377"/>
+    </resources>
 </document>

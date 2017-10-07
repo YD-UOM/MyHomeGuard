@@ -22,6 +22,7 @@
 		CD70266A1F7E24A4006F67BD /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7026691F7E24A4006F67BD /* ExternalAccessory.framework */; };
 		CD70266C1F7E24AD006F67BD /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD70266B1F7E24AD006F67BD /* GameKit.framework */; };
 		CDDF614B1F86341A0077FAD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDF614A1F86341A0077FAD6 /* ViewController.swift */; };
+		CDFEA3801F889A7F00DAE675 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDFEA37F1F889A7F00DAE675 /* home.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CD7026691F7E24A4006F67BD /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		CD70266B1F7E24AD006F67BD /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		CDDF614A1F86341A0077FAD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDFEA37F1F889A7F00DAE675 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		A2D9CBC01943C2540017F096 /* MyHomeGuard */ = {
 			isa = PBXGroup;
 			children = (
+				CDFEA37B1F888FCA00DAE675 /* MyImages */,
 				CD6F2EB41F7E116700DDF3D4 /* MyHomeGuard.entitlements */,
 				A2BD20951AC8A731007F7181 /* QSTodoDataModel.xcdatamodeld */,
 				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
@@ -127,6 +130,15 @@
 			);
 			name = frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		CDFEA37B1F888FCA00DAE675 /* MyImages */ = {
+			isa = PBXGroup;
+			children = (
+				CDFEA37F1F889A7F00DAE675 /* home.jpg */,
+			);
+			name = MyImages;
+			path = "New Group2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFEA3801F889A7F00DAE675 /* home.jpg in Resources */,
 				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
 				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
 				A31A89F71BF3FDFA00C7B656 /* Launch Screen.storyboard in Resources */,
