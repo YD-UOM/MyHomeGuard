@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
         let url = URL(string:imgurl)
         
+        //Load the image from url
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             guard let data = data, error == nil else {
                 return
