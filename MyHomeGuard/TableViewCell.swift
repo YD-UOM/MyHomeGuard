@@ -9,9 +9,9 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    //links to the imageview control of the cell on storyboard
     @IBOutlet weak var imageThumb: UIImageView!
-    
+    //links to the text contol of the cell on storyboard
     @IBOutlet weak var textThumb: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

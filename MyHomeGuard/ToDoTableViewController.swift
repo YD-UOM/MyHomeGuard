@@ -157,11 +157,12 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
         return cell
     }
     
+    //when select a row in the table view, record the data select inorder to pass value to the ViewController class.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
         if let text = item.value(forKey: "createdAt") as? Date {
             let formatter = DateFormatter()
-            // initially set the format based on your datepicker date
+            // initially set the format based on datepicker date
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             self.activetext="Date Captured: "+formatter.string(from:text)
         } else {
@@ -176,6 +177,8 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
         }
         self.performSegue(withIdentifier: "detailview", sender: self)
     }
+    
+    //Set up the data to display in each table view cell
     func configureCell(_ cell: TableViewCell, indexPath: IndexPath) -> UITableViewCell {
         let item = self.fetchedResultController.object(at: indexPath) as! NSManagedObject
         
@@ -191,6 +194,7 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
         }
         
         cell.textThumb!.textColor = UIColor.black
+        //initialise the imgurl
         var imgurl=String()
         if let url = item.value(forKey: "imageurl") as? String {
            imgurl=url
@@ -200,10 +204,10 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
         }
         let url = URL(string:imgurl)
         
+        //load the image from url
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             guard let data = data, error == nil else {
                 return
-                
             }
             DispatchQueue.main.sync() {
                 cell.imageThumb.image = UIImage(data: data)
@@ -222,6 +226,7 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
         self.performSegue(withIdentifier: "addItem", sender: self)
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any!)
     {
         if segue.identifier == "addItem" {
@@ -231,8 +236,6 @@ class ToDoTableViewController: UITableViewController,NSFetchedResultsControllerD
         
         if segue.identifier == "detailview" {
             var viewController = segue.destination as! ViewController
-            print("this is the text passed: "+activetext)
-            print("this is the url passed: "+activeurl)
             viewController.myString=activetext
             viewController.imgurl=activeurl
         }
